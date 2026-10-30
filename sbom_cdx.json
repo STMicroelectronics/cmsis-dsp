@@ -1,15 +1,15 @@
 {
     "bomFormat": "CycloneDX",
     "specVersion": "1.5",
-    "serialNumber": "urn:uuid:c547e47c-b919-4094-a501-c7368b79d987",
+    "serialNumber": "urn:uuid:1970929a-c6b5-4f99-8f03-57e17fd9a806",
     "version": 1,
     "metadata": {
-        "timestamp": "2026-03-02T14:28:03Z",
+        "timestamp": "2026-07-30T14:00:48Z",
         "tools": [
             {
                 "vendor": "Black Duck",
                 "name": "Hub",
-                "version": "2025.10.0"
+                "version": "2026.4.2"
             },
             {
                 "vendor": "CycloneDX",
@@ -24,12 +24,9 @@
         ],
         "component": {
             "type": "application",
-            "bom-ref": "90b2ee46-b99a-411a-9cb9-cf64276ae3a0",
-            "supplier": {
-                "name": ""
-            },
+            "bom-ref": "3d31ea6e-df06-42d5-ad5c-521548302d1a",
             "name": "CMSIS_DSP",
-            "version": "1.17.0",
+            "version": "1.17.1",
             "licenses": [
                 {
                     "license": {
@@ -47,7 +44,7 @@
                 },
                 {
                     "name": "BlackDuck-ComponentVersion",
-                    "value": "90b2ee46-b99a-411a-9cb9-cf64276ae3a0"
+                    "value": "3d31ea6e-df06-42d5-ad5c-521548302d1a"
                 }
             ]
         }
@@ -55,12 +52,9 @@
     "components": [
         {
             "type": "library",
-            "bom-ref": "e37fd75b-3c44-42e9-9fea-b2d8cfc6867f",
-            "supplier": {
-                "name": ""
-            },
+            "bom-ref": "3d31ea6e-df06-42d5-ad5c-521548302d1a---7fcb1e7f-1eb7-4ae5-9ba3-c15eb13ec7e2",
             "name": "ARM-software/CMSIS-DSP",
-            "version": "v1.17.0",
+            "version": "v1.17.1",
             "licenses": [
                 {
                     "license": {
@@ -78,47 +72,16 @@
                 },
                 {
                     "name": "BlackDuck-ComponentVersion",
-                    "value": "e37fd75b-3c44-42e9-9fea-b2d8cfc6867f"
-                }
-            ]
-        },
-        {
-            "type": "library",
-            "bom-ref": "f080e95e-bf7d-48ce-ab8a-03685373e45f",
-            "supplier": {
-                "name": ""
-            },
-            "name": "jQuery",
-            "version": "3.6.0",
-            "licenses": [
-                {
-                    "license": {
-                        "id": "MIT"
-                    }
-                }
-            ],
-            "cpe": "cpe:2.3:a:jquery:jquery:3.6.0:*:*:*:*:*:*:*",
-            "pedigree": {
-                "notes": "MIT License"
-            },
-            "properties": [
-                {
-                    "name": "BlackDuck-Component",
-                    "value": "286bed55-3d70-4402-b41f-efbec8daf3b6"
-                },
-                {
-                    "name": "BlackDuck-ComponentVersion",
-                    "value": "f080e95e-bf7d-48ce-ab8a-03685373e45f"
+                    "value": "7fcb1e7f-1eb7-4ae5-9ba3-c15eb13ec7e2"
                 }
             ]
         }
     ],
     "dependencies": [
         {
-            "ref": "90b2ee46-b99a-411a-9cb9-cf64276ae3a0",
+            "ref": "3d31ea6e-df06-42d5-ad5c-521548302d1a",
             "dependsOn": [
-                "e37fd75b-3c44-42e9-9fea-b2d8cfc6867f",
-                "f080e95e-bf7d-48ce-ab8a-03685373e45f"
+                "3d31ea6e-df06-42d5-ad5c-521548302d1a---7fcb1e7f-1eb7-4ae5-9ba3-c15eb13ec7e2"
             ]
         }
     ]

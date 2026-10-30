@@ -17,10 +17,21 @@
       <license name="LICENSE" title="Apache 2.0 open-source license" spdx="Apache-2.0"/>
     </licenseSet>
   </licenseSets>
+  <changelogs>
+    <changelog id="Release Notes" name="https://github.com/ARM-software/CMSIS-DSP/releases/tag/v1.17.1"/>
+  </changelogs>
   <url>https://developer.st.com/st-pack-server/api/v1/pack/</url>
   <repository type="git">https://github.com/ARM-software/CMSIS-DSP.git</repository>
 
   <releases>
+    <release version="1.17.1" date="2026-07-15" tag="v1.17.1">
+       * Added manual loop unrolling support to the F64 FIR filter.
+       * Corrected MVE float-to-Q15 and float-to-Q31 conversions to better match scalar results.
+       * Fixed IAR compiler warnings in the F16, F32, and Q31 Levinson-Durbin implementations.
+       * Fixed GCC 15 compilation warnings across Helium, F16, FFT, distance, and support code.
+       * Added host-side CMake installation with the exported CMSISDSP::CMSISDSP target and conflict-free header paths.
+       * Added Zephyr integration instructions.
+    </release>
     <release version="1.17.0" date="2026-02-04" tag="v1.17.0">
           * Internal rework of lots of files to be able to build Neon versions when targetting Cortex-A
           * Cortex-A build is not part of the pack release and should not impact Cortex-M build
@@ -180,7 +191,7 @@
 
   <components>
     <!-- CMSIS-DSP component -->
-    <component Cclass="CMSIS" Cgroup="DSP" Cvariant="Source"  Cversion="1.17.0" isDefaultVariant="true" condition="CMSISCORE">
+    <component Cclass="CMSIS" Cgroup="DSP" Cvariant="Source"  Cversion="1.17.1" isDefaultVariant="true" condition="CMSISCORE">
       <description>CMSIS-DSP Library for Cortex-M and Cortex-A</description>
       <files>
         <!-- CPU independent -->
